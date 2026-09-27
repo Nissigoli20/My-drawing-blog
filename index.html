@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Drawing Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">My Drawing Blog</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#posts">Posts</a>
+        <a href="#about">About</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>My hobby is drawing</h1>
+        <p>
+          I love drawing flowers, animals, and little ideas from my imagination.
+          This blog is where I share my art, my progress, and my favorite things to sketch.
+        </p>
+        <a href="#posts" class="button">Read my blog</a>
+      </div>
+
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="flower"></div>
+        <div class="grass"></div>
+      </div>
+    </section>
+
+    <section class="posts" id="posts">
+      <div class="posts-header">
+        <h2>Latest Drawing Posts</h2>
+        <button class="add-post-button" id="showFormBtn">Add Post</button>
+      </div>
+
+      <form id="postForm" class="post-form hidden">
+        <input type="text" id="postTitle" placeholder="Post title" required />
+        <textarea id="postText" rows="4" placeholder="Write your new blog post..." required></textarea>
+        <input type="file" id="postImage" accept="image/png, image/jpeg" />
+        <button type="submit">Save Post</button>
+      </form>
+
+      <div id="postsList">
+        <div class="post">
+          <h3>Flower sketch ideas</h3>
+          <p>
+            I made a small flower drawing with pencils and soft colors. I also tried adding tiny leaves and shadows to make it look more real.
+          </p>
+        </div>
+
+        <div class="post">
+          <h3>Drawing in the morning</h3>
+          <p>
+            My favorite time to draw is early in the day. The room is quiet, and I can focus on lines and shapes without rushing.
+          </p>
+        </div>
+
+        <div class="post">
+          <h3>My favorite colors</h3>
+          <p>
+            Pink, yellow, blue, and green are my best colors. They make my drawings feel happy and bright.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a beginner artist who enjoys learning through practice. I draw when I feel happy, calm, or inspired by nature.
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> My Drawing Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
